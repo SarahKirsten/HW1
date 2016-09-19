@@ -15,7 +15,7 @@ write some code that calculates the sum and the product of the values in the int
 write a function that takes an array and the size of the array, and outputs the values in that array. 
 call the array from your ex05 function, passing the array of 5 integers from (a)
 
-write a function that takes an array and the size of that array, then prompts the user foa value, then outputs whether or not the array contains that value
+write a function that takes an array and the size of that array, then prompts the user for a value, then outputs whether or not the array contains that value
 */
 
 #include <iostream>
@@ -27,11 +27,31 @@ write a function that takes an array and the size of that array, then prompts th
 #include <fstream>
 using namespace std;
 
+void ex05();//initialize function
+void myArray();//initialize function
+void inMyarray();//initialize function
+
 
 int main()
 {
-
+	ex05();//call function
 	return 0;
 }
 
 
+void ex05()//function: loop of five integers, stores values to an array. code that calculates sum and product, outputs results. 
+{
+	myArray();//call function
+	inMyarray();//call function
+}
+
+
+void myArray()//function: takes an array and size of that array and outputs the values in that array.
+{
+	//call the array from ex05, passing the array of 5 integers from (a)
+}
+
+void inMyarray()//function: takes array and size of that array. prompts user for value. outputs whether or not the array contains that value.
+{
+
+}
