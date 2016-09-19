@@ -15,9 +15,9 @@
 
 	HELP/DONE	initialize a char variable tab to the tab character
 
-	HELP	declare a string variable mailingAddress, prompt user for their mailing address
+	DONE	declare a string variable mailingAddress, prompt user for their mailing address
 
-	initialize a string variable to the empty string
+	DONE	initialize a string variable to the empty string
 
 */
 #include <iostream>
@@ -58,9 +58,14 @@ void ex03()//the function: find diagonal of square. yes or no response. char var
 
 
 	char tab = '	';//tab variable with tab character
+	cout << endl;
 
 
 	string mailingAddress;//string for mailing address input
-	cout << "\nEnter your mailing address: ";//prompt user for mailing address
+	cout << "Enter your mailing address: ";//prompt user for mailing address
+	cin.ignore();//ignore previous cin lines so focus on the input hereafter
 	getline (cin, mailingAddress); //input from user
+
+
+	string myString = "";//initialize a string variable to the empty string
 }
