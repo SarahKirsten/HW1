@@ -18,9 +18,9 @@ user a for loop to output the even numbers from 0 to 40
 
 implement a separate function that takes an integer, and doubles that integer. call that function from your ex04 function, using the value prompted in (a)
 
-write a function called add that takes two integers, and returns the sim of those integers. call it using two random numbers.
+write a function called add that takes two integers, and returns the sum of those integers. call it using two random numbers.
 
-write a function that adds one to its parameter. the function should take the interger as pass by reference.
+HELP	write a function that adds one to its parameter. the function should take the integer as pass by reference.
 */
 
 #include <iostream>
@@ -32,11 +32,37 @@ write a function that adds one to its parameter. the function should take the in
 #include <fstream>
 using namespace std;
 
+void ex04();//initialize function
+void separateFunction();//initialize function
+int add();//initialize function
+int parameter();//initialize function
+
 
 int main()
 {
-
+	ex04;//call function
 	return 0;
 }
 
 
+void ex04()//function: loop for number between 1 and 10. use that to output sum of cubes. asterisk. even numbers from 0 to 40. 
+{
+	separateFunction();//call function
+	add();//call function
+	parameter();//call function
+}
+
+void separateFunction()//function: takes integer, doubles integer using value in (a)
+{
+
+}
+
+int add()//add two integersand returns the sum. using two random integers
+{
+
+}
+
+int parameter()//add one to its parameter. should take the integer as pass by reference
+{
+
+}
