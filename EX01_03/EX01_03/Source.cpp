@@ -35,7 +35,8 @@ using namespace std;
 void ex04();//initialize function
 void separateFunction();//initialize function
 int add();//initialize function
-int parameter();//initialize function
+int &y;
+void parameter(int &y);//initialize function
 
 
 int main()
@@ -49,7 +50,7 @@ void ex04()//function: loop for number between 1 and 10. use that to output sum 
 {
 	separateFunction();//call function
 	add();//call function
-	parameter();//call function
+	parameter(y);//call function
 }
 
 void separateFunction()//function: takes integer, doubles integer using value in (a)
@@ -62,7 +63,7 @@ int add()//add two integersand returns the sum. using two random integers
 
 }
 
-int parameter()//add one to its parameter. should take the integer as pass by reference
+void parameter(int &y)//add one to its parameter. should take the integer as pass by reference
 {
-
+	y = y + 1;
 }
