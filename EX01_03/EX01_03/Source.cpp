@@ -35,7 +35,7 @@ using namespace std;
 void ex04();//initialize function
 void separateFunction(int x);//initialize function
 int add(int y, int z);//initialize function
-void parameter();//initialize function
+void parameter(int &s);//initialize function
 
 
 int main()
@@ -79,6 +79,7 @@ void ex04()//function: loop for number between 1 and 10. use that to output sum 
 	} while (j < userInput);//stops loop when the number of asterisks is equal to original userInput number
 	cout << endl << endl;//splits up part c from the next part in output
 
+	cout << "The even numbers from 0 to 40: ";
 	for (int k = 0; k <= 40; k++)//loop to determine even numbers
 	{
 		if (k % 2 == 0)//tests if number is even or not
@@ -90,14 +91,15 @@ void ex04()//function: loop for number between 1 and 10. use that to output sum 
 	cout << endl;
 
 	separateFunction(userInput);//call function
-	cout << endl << add(15,4) << endl;//call function
-	parameter();//call function
+	cout << endl << "The sum of 15 and 4 is: " << add(15,4) << endl;//call function
+	parameter(userInput);//call function
 }
 
 void separateFunction(int x)//function: takes integer, doubles integer using value in (a)
 {
+	int t = x;//to keep original number in temporary variable
 	x *= 2;
-	cout << endl << x << endl;
+	cout << endl << "The double of " << t << " is: " << x << endl;
 }
 
 int add(int y,int z)//add two integers and returns the sum. using two random integers
@@ -106,7 +108,9 @@ int add(int y,int z)//add two integers and returns the sum. using two random int
 	return sum;
 }
 
-void parameter()//add one to its parameter. should take the integer as pass by reference
+void parameter(int &s)//add one to its parameter. should take the integer as pass by reference
 {
-	cout << "\ntesting3\n\n";
+	int r = s;//to keep original number in temporary variable
+	s += 1;
+	cout << endl << "Adding 1 to the parameter: " << r << " is: " << s << endl << endl;
 }
