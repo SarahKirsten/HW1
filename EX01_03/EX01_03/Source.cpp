@@ -16,9 +16,9 @@ DONE	use a do-while loop to output a number of asterisks, again using the input 
 
 DONE	use a for loop to output the even numbers from 0 to 40
 
-implement a separate function that takes an integer, and doubles that integer. call that function from your ex04 function, using the value prompted in (a)
+DONE	implement a separate function that takes an integer, and doubles that integer. call that function from your ex04 function, using the value prompted in (a)
 
-write a function called add that takes two integers, and returns the sum of those integers. call it using two random numbers.
+DONE	write a function called add that takes two integers, and returns the sum of those integers. call it using two random numbers.
 
 HELP	write a function that adds one to its parameter. the function should take the integer as pass by reference.
 */
@@ -33,8 +33,8 @@ HELP	write a function that adds one to its parameter. the function should take t
 using namespace std;
 
 void ex04();//initialize function
-void separateFunction();//initialize function
-int add();//initialize function
+void separateFunction(int x);//initialize function
+int add(int y, int z);//initialize function
 void parameter();//initialize function
 
 
@@ -89,19 +89,20 @@ void ex04()//function: loop for number between 1 and 10. use that to output sum 
 
 	cout << endl;
 
-	separateFunction();//call function
-	cout << endl << add() << endl;//call function
+	separateFunction(userInput);//call function
+	cout << endl << add(15,4) << endl;//call function
 	parameter();//call function
 }
 
-void separateFunction()//function: takes integer, doubles integer using value in (a)
+void separateFunction(int x)//function: takes integer, doubles integer using value in (a)
 {
-	cout << "\ntesting\n";
+	x *= 2;
+	cout << endl << x << endl;
 }
 
-int add()//add two integers and returns the sum. using two random integers
+int add(int y,int z)//add two integers and returns the sum. using two random integers
 {
-	int sum = 5 + 32;
+	int sum = y + z;
 	return sum;
 }
 
