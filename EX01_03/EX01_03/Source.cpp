@@ -20,7 +20,7 @@ DONE	implement a separate function that takes an integer, and doubles that integ
 
 DONE	write a function called add that takes two integers, and returns the sum of those integers. call it using two random numbers.
 
-HELP	write a function that adds one to its parameter. the function should take the integer as pass by reference.
+DONE	write a function that adds one to its parameter. the function should take the integer as pass by reference.
 */
 
 #include <iostream>
