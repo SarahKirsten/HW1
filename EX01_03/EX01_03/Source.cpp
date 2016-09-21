@@ -14,7 +14,7 @@ DONE	use the number in part (a) to output the sum of the cubes from 1 to the num
 
 DONE	use a do-while loop to output a number of asterisks, again using the input from (a)
 
-use a for loop to output the even numbers from 0 to 40
+DONE	use a for loop to output the even numbers from 0 to 40
 
 implement a separate function that takes an integer, and doubles that integer. call that function from your ex04 function, using the value prompted in (a)
 
@@ -71,17 +71,23 @@ void ex04()//function: loop for number between 1 and 10. use that to output sum 
 	} while (i < userInput);//keeps loop going for numbers between 1 and userInput
 	cout << "\nThe sum of the cubes from 1 to " << userInput << " is: " << totalSum * 3 << endl << endl;//outputs the total sum of the cubes of numbers from 1 to userInput
 
-	int j = 0;
-	do
+	int j = 0;//start count
+	do//loop to output an * equal to original userInput number
 	{
 		cout << "* ";
 		j++;
-	} while (j < userInput);
+	} while (j < userInput);//stops loop when the number of asterisks is equal to original userInput number
+	cout << endl << endl;//splits up part c from the next part in output
+
+	for (int k = 0; k <= 40; k++)//loop to determine even numbers
+	{
+		if (k % 2 == 0)//tests if number is even or not
+		{
+			cout << k << " ";//only outputs even numbers
+		}
+	}
+
 	cout << endl;
-
-
-
-	
 
 	separateFunction();//call function
 	cout << endl << add() << endl;//call function
