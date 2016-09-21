@@ -10,7 +10,7 @@ in this function:
 
 DONE	write code to ask the user for a number between 1 and 10. Loop until the user gives a valid input
 
-HELP	use the number in part (a) to output the sum of the cubes from 1 to the number given (by cube, I mean that for a given number x, determine 3x)
+DONE	use the number in part (a) to output the sum of the cubes from 1 to the number given (by cube, I mean that for a given number x, determine 3x)
 
 use a do-while loop to output a number of asterisks, again using the input from (a)
 
@@ -48,6 +48,7 @@ int main()
 void ex04()//function: loop for number between 1 and 10. use that to output sum of cubes. asterisk. even numbers from 0 to 40. 
 {
 	int userInput;//variable for user input
+	
 	do//do while loop to loop the prompt until the user complies
 	{
 
@@ -57,9 +58,25 @@ void ex04()//function: loop for number between 1 and 10. use that to output sum 
 			cout << "That isn't what I asked for.\n";
 
 	} while (userInput < 1 || userInput > 10);//keeps loop going until a number between (and including) 1 through 10 is entered
+	
+	
+	int i = 0;//help moderate userInput until its to 1
+	int sum;//adds up numbers from userInput to 1
+	int totalSum = 0;//initialize for future math
+	do//loop to find it all
+	{
+		sum = userInput - i;//number from userInput to 1
+		i++;//increase i
+		totalSum += sum;//adds up all the numbers from sum
+	} while (i < userInput);//keeps loop going for numbers between 1 and userInput
+	cout << "The sum of the cubes from 1 to " << userInput << " is: " << totalSum * 3 << endl;//outputs the total sum of the cubes of numbers from 1 to userInput
+
+
+
+
+
 
 	
-
 
 	separateFunction();//call function
 	cout << endl << add() << endl;//call function
